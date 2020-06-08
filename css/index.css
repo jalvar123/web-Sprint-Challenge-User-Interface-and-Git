@@ -67,8 +67,9 @@ header{
     
 }
 header img{
-    width:21%;
-    height:45px;
+    width:19%;
+    height:38px;
+    margin-top: 9px;
 }
 .links{
    width:80%;
@@ -195,9 +196,9 @@ p {
     justify-content: space-around;
     width:100%;
 }
-@keyframs switch {
-    from {background-color: red;}
-    to {background-color: green;}
+@keyframes switch {
+    from {color: red;}
+    to {color: green;}
 }
 .work button{
     border-radius:10px;
@@ -255,4 +256,7 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+    animation-name: switch;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
