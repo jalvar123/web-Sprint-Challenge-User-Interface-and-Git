@@ -21,7 +21,10 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+    vertical-align: baseline;
+    box-sizing:border-box;
+    max-width:100%;
+    
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -54,14 +57,40 @@ table {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    font-weight: 550;
 }
 
+header{
+    display:flex;
+    justify-content: flex-start;
+    width:100%;
+    
+}
+header img{
+    width:19%;
+    height:38px;
+    margin-top: 9px;
+}
+.links{
+   width:80%;
+   display:flex;
+   justify-content: space-between;
+}
+.links a{
+    width:15%;
+    text-align:center;
+    margin-top:27px;
+    text-decoration: none;
+}
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 19px;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
-
+.top-content img{
+    margin-top:35px;
+    margin-bottom:17px;
+}
 p {
     line-height: 1.4;
 }
@@ -111,13 +140,87 @@ p {
     align-items: center;
     justify-content: center;
 }
-
+.middle-content .boxes .box1{
+    background-color: teal;
+}
+.middle-content .boxes .box2{
+    background-color: gold;
+}
+.middle-content .boxes .box3{
+    background-color: cadetblue;
+}
+.middle-content .boxes .box4{
+    background-color: coral;
+}
+.middle-content .boxes .box5{
+    background-color: crimson;
+}
+.middle-content .boxes .box6{
+    background-color: forestgreen;
+}
+.middle-content .boxes .box7{
+    background-color: darkorchid;
+}
+.middle-content .boxes .box8{
+    background-color: hotpink;
+}
+.middle-content .boxes .box9{
+    background-color: indigo;
+}
+.middle-content .boxes .box10{
+    background-color: dodgerblue;
+}
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
 }
-
+.About{
+    border-bottom: 1px dashed black;
+}
+.About img {
+    margin-top:35px;
+    margin-bottom:17px;
+    margin-right:19px;
+}
+.about-page{
+    width:98%;
+    height:1%;
+    font-size: 0.82em;
+    margin-bottom:3px;
+}
+.work{
+    font-size: 0.82em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width:100%;
+}
+@keyframes switch {
+    from {color: red;}
+    to {color: green;}
+}
+.work button{
+    border-radius:10px;
+    width:32.5%;
+    border-color:black;
+    margin:0 auto;
+    padding:10px;
+    margin-bottom:3.44%;
+    margin-top:3.44%;
+}
+.work button:hover{
+    background-color: forestgreen;
+}
+.work h2{
+    margin-top:2%;
+}
+.work1, .work2, .work3, .work4{
+    width:40%;
+    border-bottom: 1px dashed black;
+    margin-bottom:3%;
+    margin-top:3%;
+}
 .bottom-content .text-container {
     padding-right: 4%;
 }
@@ -125,10 +228,20 @@ p {
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
-
+.ender{
+    font-size:0.89em;
+    width:100%;
+    margin-left:49px;
+    margin-bottom:35px;
+    margin-top:12px;
+}
+.ender h2{
+    font-size: 99%;
+}
 footer {
     width: 100%;
     background: black;
+    margin-left:25px;
 }
 
 footer nav {
@@ -143,4 +256,7 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+    animation-name: switch;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
